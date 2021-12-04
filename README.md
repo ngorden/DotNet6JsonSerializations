@@ -1,6 +1,6 @@
 # JSON Serialization in .NET 6
 
-This code isn't mine. [Elfocrash](github.com/elfocrash) demonstrated this in a video showcasing .NET 6 features. I just wanted to be able to share it with my coworkers.
+This code isn't mine. [Elfocrash](https://github.com/elfocrash) demonstrated this in a video showcasing .NET 6 features. I just wanted to be able to share it with my coworkers.
 
 # Benchmark Summaries 
 ## Executed in Release Mode(1,000 Samples)
