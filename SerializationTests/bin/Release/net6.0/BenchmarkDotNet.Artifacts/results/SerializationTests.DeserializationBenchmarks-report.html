@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>SerializationTests.DeserializationBenchmarks-20211204-111945</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19042.1348 (20H2/October2020Update)
+Intel Core i7-4790 CPU 3.60GHz (Haswell), 1 CPU, 8 logical and 4 physical cores
+.NET SDK=6.0.100
+  [Host]     : .NET 6.0.0 (6.0.21.52210), X64 RyuJIT
+  DefaultJob : .NET 6.0.0 (6.0.21.52210), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>       Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Ratio</th><th>RatioSD</th><th>Gen 0</th><th>Gen 1</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>ClassicDeserializer</td><td>455.8 &mu;s</td><td>9.02 &mu;s</td><td>20.91 &mu;s</td><td>1.00</td><td>0.00</td><td>28.8086</td><td>9.2773</td><td>120 KB</td>
+</tr><tr><td>GeneratedSerializer</td><td>448.5 &mu;s</td><td>8.81 &mu;s</td><td>11.14 &mu;s</td><td>0.98</td><td>0.05</td><td>28.3203</td><td>8.7891</td><td>120 KB</td>
+</tr></tbody></table>
+</body>
+</html>
